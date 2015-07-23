@@ -6,7 +6,22 @@
   <name>BeardAch Annotations</name>
   <url>https://github.com/tehbeard/BeardAch-BuildTools</url>
   <description>annotation processor for BeardAch</description>
+  <distributionManagement>
+  		<repository>
+            <id>tehbeard-repo</id>
+            <name>maven.tehbeard.com</name>
+            <url>${env.CI_DEPLOY_SERVER}</url>
+        </repository>
+    </distributionManagement>
   <build>
+  	<extensions>
+            <!-- Enabling the use of FTP -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>2.5</version>
+            </extension>
+        </extensions>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

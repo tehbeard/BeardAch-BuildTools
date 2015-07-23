@@ -1,0 +1,7 @@
+language: java
+after_success: mvn deploy --settings deploy.xml
+env:
+  global:
+  - secure: OMwp4LBaeBZQCxb9Z4xei/qDWnumqK+txeTLAde26T+QziwF5jzO/cXhSw/Vuhaop0R1RLdJ67M4P6xW46GopkIEZ761RQsebev/ohKPe3SpzebHTs2Ewp1T3enPVCWLUQuHaE8vrTw13aqWIJiInPhI7fFE6Ro78HuJo7si1MQ=
+  - secure: VOuii8IjFQ3OQFQkqfOao4m9DcPU9PsFRls6HExuaRGwYcwofCKXivxOoYic0DETUFBRuG+R7+6B6Z2RC3iizwkCuHE+GEGsp0V+u3K3ZhKLEA26Mgkcw/gY5vvH2r9lY7xGgYPL+U+57vvtfON0V9RfVLtxPAbWN//PTfEpWUk=
+  - secure: Iebgpbbo0+g1mT4oHPdWy0RJfepI4CzSEOBVvR0IrSo88nzKVBO3ba39Lgg81P8kWOXhTsEwTgKItr6XycO+iG5ZoC6ziF32R1KWuTnq5WfhYfvSfn2kUnCbQ8/ooxTagV7MRYkoFZRHcfFTboSkv9i2UrgMhaLuDhq333Ackk0=
